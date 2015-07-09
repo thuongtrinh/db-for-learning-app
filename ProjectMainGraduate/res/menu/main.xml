@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.projectmaingraduate.MainActivity" >
+
+    <item 
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:title="@string/action_about"
+        android:icon="@drawable/ic_about"
+        android:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_sign_in"
+        android:orderInCategory="100"
+        android:title="@string/action_sign_in_user"
+        android:icon="@drawable/icon_login"
+        android:showAsAction="ifRoom"/>
+
+</menu>

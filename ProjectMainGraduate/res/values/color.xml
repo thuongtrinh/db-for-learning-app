@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <color name="border">#778899</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#FF0000</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="blue">#0000FF</color>
+    <color name="brozen">#CD7F32</color>
+    <color name="gray">#808080</color>
+    <color name="green">#32CD32</color>
+    <color name="gold">#dcc7b3</color>
+	<color name="black">#000000</color> 
+	<color name="orange">#FFA500</color>
+	<color name="purple">#800080</color>
+	<color name="yellow">#FFFF00</color>
+	<color name="pink">#FFC0CB</color>
+	<color name="rating">#FF8C00</color>
+	<color name="background_color_tablet">#373450</color>
+	<color name="color_background_type_tablet">#1B1821</color>
+	<color name="background_border_admin">#cccccc</color>
+	<color name="background_admin">#2F4F4F</color>
+	<!-- color give tabselect -->
+	<color name="tab_unselected">#008B8B</color>
+	<color name="tab_selected">#6495ED</color>
+	<color name="tab_pressed">#B8860B</color>
+	<color name="color_head_shop">#556B2F</color>
+	<color name="color_tab2">#64E986</color>
+	<color name="blue_navy_bold">#20B2AA</color>
+	
+	<color name="red_bold">#4e1414</color>
+	<color name="red_medium">#DD0000</color>
+	<color name="mau_cam">#FF8C00</color>
+	<color name="cam_nhe">#D2691E</color>
+	<color name="yellow_khaki">#F0E68C</color>
+	<color name="blue_medium">#0000CD</color>
+	<color name="blue_facebook">#DD3b5998</color>
+	<color name="LightBlue">#ADD8E6</color>
+	
+	<color name="list_item_title">#fff</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#345673</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="navy_bold">#7a8fac</color>  
+    <color name="navy_light">#dbe2ed</color> 
+    <color name="blue_send">#1851df</color>
+    <color name="gray_chat">#5e6977</color> 
+    <color name="navy_display_chat">#99c8fe</color>
+    <color name="red_giaohang">#98304a</color>
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFF0"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:weightSum="3" >
+
+        <LinearLayout style="@style/Layout_out_name_topic" >
+
+            <LinearLayout style="@style/Layout_in_name_topic" >
+
+                <ImageButton
+                    android:id="@+id/activity_adminstrator_imgbtn_customer"
+                    style="@style/ImageButon_name_topic"
+                    android:src="@drawable/icon_customer" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/TextView_name_topic"
+                    android:text="@string/khach_hang" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/Layout_in_name_topic" >
+
+                <ImageButton
+                    android:id="@+id/activity_adminstrator_imgbtn_products"
+                    style="@style/ImageButon_name_topic"
+                    android:src="@drawable/icon_production" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/TextView_name_topic"
+                    android:text="@string/san_pham" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/Layout_in_name_topic" >
+
+                <ImageButton
+                    android:id="@+id/activity_adminstrator_imgbtn_payment"
+                    style="@style/ImageButon_name_topic"
+                    android:src="@drawable/icon_payment" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/TextView_name_topic"
+                    android:text="@string/doanh_thu" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/Layout_out_name_topic" >
+
+            <LinearLayout style="@style/Layout_in_name_topic" >
+
+                <ImageButton
+                    android:id="@+id/activity_adminstrator_imgbtn_feedback"
+                    style="@style/ImageButon_name_topic"
+                    android:src="@drawable/icon_feedback" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    style="@style/TextView_name_topic"
+                    android:text="@string/phan_hoi" />
+            </LinearLayout>
+
+           
+
+            <LinearLayout style="@style/Layout_in_name_topic" >
+
+                <ImageButton
+                    android:id="@+id/activity_adminstrator_imgbtn_delivery"
+                    style="@style/ImageButon_name_topic"
+                    android:src="@drawable/icon_dilivery" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    style="@style/TextView_name_topic"
+                    android:text="@string/giao_hang" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
