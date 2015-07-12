@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_admin" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-2dp" >
+
+            <com.example.graphic.CircleImage
+                android:id="@+id/imageViewss1"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:background="@drawable/background_circle_adminstrator"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_admin" />
+        </FrameLayout>
+
+        <View
+            android:id="@+id/imageVie"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/background_border_admin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-1dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/activity_start_admin_btn_update"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btn_admin_background"
+                android:gravity="center"
+                android:text="Update"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+
+            <View
+                android:id="@+id/imassVie"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/background_border_admin" />
+
+            <Button
+                android:id="@+id/activity_start_admin_btn_login"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btn_admin_background"
+                android:gravity="center"
+                android:text="Login"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/activity_start_admin_layout_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="invisible" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/activity_start_admin_edt_account_update"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_drink_profile_post_frame"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/ic_drink_profile_claim_fullname"
+                        android:hint="Adminstrator accounct"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/activity_start_admin_edt_password_update"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_drink_profile_post_frame"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/ic_drink_profile_claim_title"
+                        android:hint="Adminstrator password"
+                        android:inputType="textPassword"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textSize="15sp" />
+                </LinearLayout>
+                
+                <TextView
+                    android:id="@+id/activity_start_admin_tv_invalidAccount_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:text="Invalid account"
+                    android:textColor="@color/red"
+                    android:drawableLeft="@drawable/icon_alter"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/activity_start_admin_btn_done_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/selector_button_muahang"
+                    android:text="Done"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_start_admin_layout_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/activity_start_admin_edt_account_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_drink_profile_post_frame"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/ic_drink_profile_claim_fullname"
+                        android:hint="Adminstrator accounct"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/activity_start_admin_edt_password_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_drink_profile_post_frame"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/ic_drink_profile_claim_title"
+                        android:hint="Adminstrator password"
+                        android:inputType="textPassword"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/activity_start_admin_tv_invalidAccount_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:text="Invalid account"
+                    android:textColor="@color/red"
+                    android:drawableLeft="@drawable/icon_alter"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/activity_start_admin_btn_done_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/selector_button_muahang"
+                    android:text="Login"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

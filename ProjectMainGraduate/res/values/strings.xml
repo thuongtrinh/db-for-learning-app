@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name"><b>PHONE SHOP</b></string>
+    <string name="version">Phiên bản 1.1.6</string>
+    <string name="action_sign_in_user">Đăng nhập</string>
+    <string name="action_about">Thông tin</string>
+    <string name="contentDescription">Logo</string>
+    <string name="action_log_out">Đăng xuất</string>
+    <string name="khach_hang">Khách hàng</string>
+	<string name="giao_hang">Giao hàng</string>
+	<string name="san_pham">Sản phẩm</string>
+    <string name="phan_hoi">Phản hồi</string>
+    <string name="doanh_thu">Doanh thu</string>
+    <string name="khuyen_mai">Khuyến mãi</string>
+    
+    <string name="app_admin"><b>QUẢN TRỊ</b></string>
+    <string name="app_manager_sale"><b>QUẢN LÝ CỬA HÀNG</b></string>
+    <string name="app_product"><b>QUẢN LÝ SẢN PHẨM</b></string>
+    <string name="app_income"><b>QUẢN LÝ DOANH THU</b></string>
+    <string name="app_about"><b>Thông tin về chúng tôi</b></string>
+    <string name="buy_product"><b>MUA SẢN PHẨM</b></string>
+    
+    <string name="title">Phone Shop</string>
+    
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    
+    <string name="desc_list_item_icon">Item Icon</string>
+    
+    
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item ><b>Trang chủ</b></item>
+        <item >Quản trị</item>
+        <item >Trò chuyện</item>
+    </string-array>
+    
+    <!-- Nav Drawer List Item Icon -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_administrator</item>
+        <item>@drawable/ic_communities</item>
+    </array>
+    
+</resources>

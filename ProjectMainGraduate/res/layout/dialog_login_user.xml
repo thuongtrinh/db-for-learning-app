@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/app_background"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp" >
+
+                <com.example.graphic.CircleImage
+                    android:id="@+id/imageViewss1"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_circle_adminstrator"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_user" />
+            </FrameLayout>
+
+            <View
+                android:id="@+id/imageVie"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/background_border_admin" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-1dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/dialog_login_user_btn_create_sign_in"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_btn_admin_background"
+                    android:gravity="center"
+                    android:text="Tạo tài khoản"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/imassVie"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/background_border_admin" />
+
+                <Button
+                    android:id="@+id/dialog_login_user_btn_create_login"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_btn_admin_background"
+                    android:gravity="center"
+                    android:text="Đăng nhập"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/dialog_login_user_layout_sign_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/tv_claim_page_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/blue_navy_bold"
+                            android:gravity="center_horizontal"
+                            android:padding="5dp"
+                            android:scaleX="1.1"
+                            android:text="Đăng kí tài khoản mới"
+                            android:textAllCaps="true"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <ImageButton
+                            android:id="@+id/dialog_login_user_btn_refresh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/selector_background_icon_refresh"
+                            android:contentDescription="@null" />
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/dialog_login_user_edt_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_drink_profile_post_frame"
+                        android:drawablePadding="25dp"
+                        android:drawableRight="@drawable/ic_drink_profile_claim_title"
+                        android:hint="Tên tài khoản của bạn"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@color/gold"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/dialog_login_user_edt_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_drink_profile_post_frame"
+                        android:drawablePadding="25dp"
+                        android:drawableRight="@drawable/ic_drink_profile_claim_website"
+                        android:hint="Mật khẩu (lớn hơn 4 kí tự)"
+                        android:inputType="textPassword"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@color/gold"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/dialog_login_user_edt_fullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_drink_profile_post_frame"
+                        android:drawablePadding="25dp"
+                        android:drawableRight="@drawable/ic_drink_profile_claim_fullname"
+                        android:hint="Họ tên đầy đủ của bạn"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@color/gold"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/dialog_login_user_edt_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_drink_profile_post_frame"
+                        android:drawablePadding="25dp"
+                        android:drawableRight="@drawable/ic_drink_profile_claim_address"
+                        android:hint="Địa chỉ của bạn"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@color/gold"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/dialog_login_user_edt_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_drink_profile_post_frame"
+                        android:drawablePadding="25dp"
+                        android:drawableRight="@drawable/ic_drink_profile_claim_phone"
+                        android:hint="Số điện thoại di động"
+                        android:inputType="phone"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@color/gold"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/dialog_login_user_edt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_drink_profile_post_frame"
+                        android:drawablePadding="25dp"
+                        android:drawableRight="@drawable/ic_drink_profile_claim_email"
+                        android:hint="Email của bạn"
+                        android:inputType="textEmailAddress"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@color/gold"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/dialog_login_user_tv_notice_error"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="5dp"
+                            android:drawableLeft="@drawable/icon_alter"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/red"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/dialog_login_user_btn_sign_in"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/border_3d"
+                            android:text="Đăng kí"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dialog_login_user_layout_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:orientation="vertical" >
+
+                        <EditText
+                            android:id="@+id/dialog_login_user_edt_account_login"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_drink_profile_post_frame"
+                            android:drawablePadding="10dp"
+                            android:drawableRight="@drawable/ic_drink_profile_claim_fullname"
+                            android:hint="Tài khoản"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@android:color/white"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/dialog_login_user_edt_password_login"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_drink_profile_post_frame"
+                            android:drawablePadding="10dp"
+                            android:drawableRight="@drawable/ic_drink_profile_claim_title"
+                            android:hint="Mật khẩu"
+                            android:inputType="textPassword"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@android:color/white"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/dialog_login_user_tv_invalidAccount_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/icon_alter"
+                        android:text="Invalid account"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/dialog_login_user_btn_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/border_3d"
+                        android:text="Đăng nhập"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/dialog_login_user_btn_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_close_large" />
+    </RelativeLayout>
+
+</LinearLayout>
